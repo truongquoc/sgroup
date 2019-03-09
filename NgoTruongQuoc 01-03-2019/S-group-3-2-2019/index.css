@@ -1,0 +1,30 @@
+.box-red{
+    width: 100%;
+    height: 300px;
+    background: red;
+
+}
+.box-yellow{
+    width: 100%;
+    height: 300px;
+    background: yellowgreen;
+    
+}
+.box-yellow::before{
+    width: 100%;
+    height: 300px;
+    background: yellowgreen;
+    
+}
+.box-yellow::before{
+    width: 100%;
+    height: 300px;
+    background: yellowgreen;
+    
+}
+.box-black{
+    width: 100%;
+    height: 300px;
+    background: black;
+    
+}

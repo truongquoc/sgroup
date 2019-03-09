@@ -1,0 +1,376 @@
+
+img{
+    position: relative;
+    transform: translate3d(0,0,0);
+    height: 390px;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+  
+    
+}
+.content{
+    position: relative;
+    float: left;
+    background:gray;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    cursor: pointer;
+   text-align: center;
+  
+}
+*{
+    font-family: 'Raleway', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.box-1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90%;
+    height: 90%;
+    color: floralwhite;
+    text-transform: uppercase;
+    /* background: rgba(203, 248, 185, 0.212); */
+    font-size: 1.25rem;
+    transition-duration: 2s;
+    
+    
+    backface-visibility: hidden;
+    
+}
+.box-1::before {
+    position: absolute;
+    content: ' ';
+    top: 30px;
+    left: 50px;
+    bottom: 30px;
+    right: 50px;
+    transform: scale(0,1);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; 
+    transform-origin: 0 100%;
+    
+}
+.container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+   background: #303030;
+}
+.box-1::after{
+    position: absolute;
+    content: ' ';
+    top: 50px;
+    left: 30px;
+    bottom: 50px;
+    right: 30px;
+    border-left: 1px solid white;
+    border-right: 1px solid white; 
+    transform-origin: 0 0;
+    transform: scale(1,0);
+    transform-origin: 100% 0; 
+}
+.content:hover .box-1::before,.content:hover .box-1::after{
+   transform: scale(1);
+    transition-duration: 2s;
+}
+.content:hover img{
+   
+    transform: translate3d(0,-30px,0);
+    transition-duration: 3s;
+    transition-delay: 0.15s;
+}
+h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0.25rem;
+}
+ .box-1 h2  span{
+     
+    
+    font-weight: 900;
+    display: inline-block;
+}
+.box-1 p {  
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    opacity: 0;
+    
+    
+}
+.content:hover .box-1 h2{
+    transition-duration: 1s; 
+    transform: translate(-50%,-100px);
+  
+
+}
+.content:hover .box-1 p{
+    transform: translate3d(-50%,-50%);
+    opacity: 1;
+    transition-duration: 2s;
+}
+
+ 
+.triangle-container .triangle{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    text-align:center;
+    opacity: 0.9;
+    background: url('https://tympanus.net/Development/HoverEffectIdeas/img/triangle2.svg');
+    background-size: 100% 100%;
+    transform: scale3d(5,2.5,1);
+    transform-origin: 50% 50%;
+    
+}
+.content:hover .triangle-container .triangle{
+    transform: scale3d(1,1,1);
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+.content .triangle-container h2{
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%,-10%);
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+}
+.content:hover .triangle-container  h2{
+    transform: translate(-50%,-50%);
+    transition-duration: 1.25s;
+   
+}   
+.content .triangle-container span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    
+    
+}
+.content .triangle-container span a:nth-of-type(1) i{
+    transform: translate3d(-50px,-60px,0);
+    visibility: hidden;
+}
+.content .triangle-container span a:nth-of-type(3) i{
+    transform: translate3d(60px,-60px,0);
+    visibility: hidden;
+}
+.content .triangle-container span a:nth-of-type(2) i{
+    transform: translate3d(20px,50px,0);
+    visibility: hidden;
+}
+.content:hover .triangle-container span a i 
+{
+    visibility: visible;
+    transform: translate3d(0,0,0);
+    transition-duration: 1.25s;
+}
+i{
+    color: white;
+}
+
+
+.snow-effect{
+    position: relative;
+    float: left;
+    background:gray;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    cursor: pointer;
+   text-align: center;
+   background:#3085a3;
+   opacity: 0.6;
+   filter: blur(1px);
+   perspective: 1000;
+   -webkit-perspective: 1000;
+}
+.line-1{
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: 1px solid #fff;
+    transform: translate(-50%,-50%);
+    color: white; 
+    transform-origin: 50% 0;
+    
+}
+.line-2{
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-top: 1px solid #fff;
+    transform: translate(-50%,-50%);
+    color: white; 
+    
+}
+.snow-effect img{
+    position: relative;
+    min-height: 100%;
+    max-width: 100%;
+    transform: translate3d(0, 0, 500px);
+}
+.snow-effect:hover .line-1{
+    transition-duration: 1.25s;
+    transform:translate(-50%,-50%) rotate(45deg);
+}
+.snow-effect:hover .line-2{
+    transition-duration: 1.25s;
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+.snow-effect .title h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+
+
+}
+.snow-effect .title p{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+}
+.snow-effect:hover .title h1{
+    transition-duration: 1.25s;
+    transform: translate(-50%,20%);
+}
+.snow-effect:hover .title  p{
+    transition-duration: 1.25s;
+    transform: translate(-50%,-50px);
+}
+.snow-effect:hover{
+    transition-duration: 1.25s;
+    filter: blur(0);
+}
+.snow-effect:hover img{
+    transition: opacity 2.33s, transform 2.35s;
+    transform: translate3d(0, 0, 0);
+}
+.content .square-content .square{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #fff;
+    transform-origin: center;
+    transform: translate3d(-50%,-50%,0) rotate3d(0, 0, 1, 45deg) scale3d(0,0,0);
+    
+}
+.content:hover .square-content .square{
+    transition-duration: 1s;
+    transform: translate3d(-50%,-50%,0) rotate3d(0, 0, 1, 45deg) scale3d(1,1,1);
+}
+.content .square-content h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+.content .square-content p i:nth-of-type(1)  {
+    
+    position :absolute;
+    top: 35%;
+    left :40%;
+    transform: translate3d(-60px,-60px,0);
+    visibility: hidden;
+}
+.content .square-content p i:nth-of-type(2)  {
+    
+    position :absolute;
+    top: 35%;
+    left :55%;
+    transform: translate3d(60px,-60px,0);
+    visibility: hidden;
+}
+.content .square-content p i:nth-of-type(3)  {
+    
+    position :absolute;
+    top: 55%;
+    left :40%;
+    transform: translate3d(-60px,60px,0);
+    visibility: hidden;
+}
+.content .square-content p i:nth-of-type(4)  {
+    
+    position :absolute;
+    top: 55%;
+    left :55%;
+    transform: translate3d(60px,60px,0);
+    visibility: hidden;
+}
+.content .square-content h2 span{
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.content:hover .square-content h2{
+    
+    visibility: hidden;
+
+}
+.content:hover .square-content p  i{
+    transition-duration: 1.25s;
+    transform: translate3d(0,0,0);
+    visibility: visible;
+}
+.content .bridge-content .bridge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+
+}
+.content:hover .bridge-content .bridge{
+    transition-duration: 1.25s;
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
